@@ -87,7 +87,10 @@ p {
 
 /***HEADER STYLES***/
 
-
+header {
+	align-items: center;
+	padding: 20px;
+}
 
 /***CARD STYLES***/
 
@@ -95,7 +98,9 @@ p {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	height: 100vh;
+	height: calc(100vh - 108px);
+	margin: 0 auto;
+	max-width: 1000px;
 	padding: 20px;
 }
 
@@ -110,6 +115,18 @@ p {
 
 .caps {
 	text-transform: uppercase;
+}
+
+#options-container {
+	justify-content: center;
+}
+
+#options-container button {
+	margin: 0 20px 20px 0;
+}
+
+#options-container button:last-of-type {
+	margin-right: 0;
 }
 
 .opt-btn {
