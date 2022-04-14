@@ -35,7 +35,7 @@ var rooms = {
 		],
 	},
 	fightGoblins: {
-		heading: `Fightin' time.`,
+		heading: `Goblin time.`,
 		copy: [
 			`What better way to start your day than fighting some goblins. Certainly not brushing your teeth!`,
 			`After a quick search, you discover a goblin camp. There are two goblins by a campfire engrossed in conversation.`
@@ -51,4 +51,57 @@ var rooms = {
 			},
 		]
 	},
+	searchTools: {
+		heading: 'You find a stick.',
+		copy: [
+			`Nice.`,
+			`It won't be much good against a dragon, but hey, you've gotta start somewhere?`,
+		],
+		options: [
+			{
+				buttonText: '',
+				destination: '',
+			},
+		]
+	},
+	confirmDragon: {
+		heading: 'Uh...you sure, bud?',
+		copy: [
+			`I just wanna double check here, because the smart money's on the dragon at this point.`,
+		],
+		options: [
+			{
+				buttonText: `We're doin' it.`,
+				destination: 'fightDragon',
+			},
+			{
+				buttonText: `Maybe I'll fight some goblins instead?`,
+				destination: 'fightGoblins',
+			},
+			{
+				buttonText: `On second thought, let's look for some tools.`,
+				destination: 'findMagicalSword',
+			},
+		]
+	},
+	backToSleep: {
+		heading: 'Nap time.',
+		copy: [
+			`What a good idea. That dragon's not going anywhere, you've got loads of time. You're feeling easy like a Sunday morning babyyyyyyyyyyyy.`
+		],
+		options: [
+			{
+				buttonText: ``,
+				destination: ``,
+			},
+			{
+				buttonText: ``,
+				destination: ``,
+			},
+			{
+				buttonText: ``,
+				destination: ``,
+			},
+		]
+	}
 }
